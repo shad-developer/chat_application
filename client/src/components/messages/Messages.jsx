@@ -6,7 +6,6 @@ import useListenMessages from "../../hooks/useListenMessages";
 
 const Messages = () => {
   const { messages, loading } = useGetMessages();
-  console.log(messages)
   useListenMessages();
   const lastMessageRef = useRef();
 
