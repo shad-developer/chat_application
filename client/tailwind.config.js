@@ -1,8 +1,10 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+// tailwind.config.js (for ESM)
+import { defineConfig } from 'tailwindcss';
+
+export default defineConfig({
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {},
   },
-  plugins: [require("daisyui")],
-};
+  plugins: [],
+});
